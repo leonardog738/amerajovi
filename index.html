@@ -333,19 +333,20 @@
           </h2>
 
           <form class="contact-form" onsubmit="return enviarContato(event)">
-            <div class="form-row">
+            <div class="form-grpup">
               <div class="form-group">
                 <label for="contato-nome">Nome</label>
                 <input type="text" id="contato-nome" name="nome" placeholder="Seu nome" required>
               </div>
 
-              <button type="submit" class="btn-main form-submit">Enviar</button>
             </div>
 
             <div class="form-group">
               <label for="contato-duvida">Dúvida</label>
               <textarea id="contato-duvida" name="duvida" placeholder="Escreva sua dúvida aqui" required></textarea>
             </div>
+            <button type="submit" class="btn-main form-submit">Enviar</button>
+
           </form>
         </div>
       </div>
