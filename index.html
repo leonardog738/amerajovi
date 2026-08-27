@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Camera Jovi</title>
+<title>Camera Jovi — Landing Page</title>
+<meta name="description" content="Camera Jovi: uma experiência de câmera personalizável para o smartphone, desenvolvida pelo grupo Da Facul.">
 <link rel="icon" type="image/png" href="src/imgs/Captura_de_tela_de_2026-05-15_01-30-39-removebg-preview.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,335 +14,355 @@
 
 <body>
 
-<!-- NAV -->
-<nav>
-  <a href="#" class="nav-logo">Grupo: Da Facul<span>.</span></a>
+<header>
+  <!-- NAV -->
+  <nav>
+    <a href="#inicio" class="nav-logo">Grupo: Da Facul<span>.</span></a>
 
-  <ul class="nav-links">
-    <li><a href="#">Início</a></li>
-    <li><a href="#features">Recursos</a></li>
-    <li><a href="#contact">Contato</a></li>
-  </ul>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#solucao">A Solução</a></li>
+      <li><a href="#publico-alvo">Público-Alvo</a></li>
+      <li><a href="#galeria">Galeria</a></li>
+      <li><a href="#equipe">Nossa Equipe</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
 
+    <button class="nav-cta" onclick="window.location.href='src/pages/prototipo.html'">
+      Ver Protótipo
+    </button>
 
-<button class="nav-cta" onclick="window.location.href='src/pages/prototipo.html'">
-  Ver Protótipo
-</button>
-</nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
 
+  <!-- HERO -->
+  <section class="hero" id="inicio">
 
-<section class="hero">
+    <div class="hero-grain"></div>
+    <div class="hero-grid-overlay"></div>
 
-  <div class="hero-grain"></div>
-  <div class="hero-grid-overlay"></div>
+    <div class="hero-left">
 
-  <div class="hero-left">
+      <p class="eyebrow">
+        UX/UI Design Premium para Câmera
+      </p>
 
-    <p class="eyebrow">
-      UX/UI Design Premium para Câmera
-    </p>
+      <h1 class="hero-title">
+        O Futuro da<br>
+        <em>Experiência</em><br>
+        de Câmera
+      </h1>
 
-    <h1 class="hero-title">
-      O Futuro da<br>
-      <em>Experiência</em><br>
-      de Câmera
-    </h1>
+      <p class="hero-desc">
+        Uma interface moderna, fluida e intuitiva que transforma a captura em algo sofisticado — projetada para impressionar.
+      </p>
 
-    <p class="hero-desc">
-      Uma interface moderna, fluida e intuitiva que transforma a captura em algo sofisticado — projetada para impressionar.
-    </p>
-
-    <div class="hero-actions">
-      <button class="btn-main" onclick="window.location.href='src/pages/prototipo.html'">Ver Protótipo</button>
-      
-    </div>
-
-
-
-  </div>
-
-  <div class="hero-right">
-
-    <div class="hero-bg-circle"></div>
-
-    <div class="phone-frame" onclick="window.location.href='src/pages/prototipo.html'">
-      <img src="src/imgs/Captura_de_tela_de_2026-05-15_00-13-33-removebg-preview.png" alt="Camera UI">
-    </div>
-
-  </div>
-
-</section>
-<hr>
-
-<div class="marquee-section">
-
-  <div class="marquee-track">
-
-    <div class="marquee-item">Interface Minimalista</div>
-    <div class="marquee-item">Controles Inteligentes</div>
-    <div class="marquee-item">Animações Premium</div>
-    <div class="marquee-item">UX Otimizada</div>
-    <div class="marquee-item">Personalização Inteligente</div>
-    <div class="marquee-item">Experiência Fluida</div>
-
-    <div class="marquee-item">Interface Minimalista</div>
-    <div class="marquee-item">Controles Inteligentes</div>
-    <div class="marquee-item">Animações Premium</div>
-    <div class="marquee-item">UX Otimizada</div>
-    <div class="marquee-item">Personalização Inteligente</div>
-    <div class="marquee-item">Experiência Fluida</div>
-
-  </div>
-
-</div>
-<hr>
-
-<section class="features" id="features">
-
-  <div class="section-header">
-
-    <div>
-      <p class="section-eyebrow">Recursos</p>
-
-      <h2 class="section-title">
-        Criado para uma<br>
-        <em>experiência</em><br>
-        Personalizada
-      </h2>
-    </div>
-
-    <p class="section-desc">
-      Cada detalhe pensado para que capturar o momento perfeito seja rápido, intuitivo e esteticamente refinado.
-    </p>
-
-  </div>
-<hr>
-  <div class="features-list">
-
-    <div class="feature-item">
-      <div class="feature-number"><h1>01</h1></div>
-
-    
-        <div style="
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            gap:60px;
-            flex-wrap:wrap;
-        ">
-
-            <div class="phone-frame">
-                <img src="src/imgs/Captura_de_tela_de_2026-05-15_00-10-04-removebg-preview.png" alt="Camera UI">
-            </div>
-
-            <div style="
-                max-width:420px;
-            ">
-                <h3 class="feature-name" style="margin-bottom:20px;">
-                    Experiência Personalizada
-                </h3>
-
-                <p class="feature-text">
-                    Ao abrir a câmera pela primeira vez, o usuário poderá escolher entre utilizar uma experiência personalizada, adaptada às suas preferências, ou manter o modo padrão do sistema do celular.
-                </div>
-    
-            </div>
-          
-    
-        </div>
-    
-        <div class="feature-item">
-            <div class="feature-number"><h1>02</h1></div>
-    
-        
-            <div style="
-                display:flex;
-                justify-content:center;
-                align-items:center;
-                gap:60px;
-                flex-wrap:wrap;
-            ">
-    
-                <div class="phone-frame">
-                    <img src="src/imgs/Captura_de_tela_de_2026-05-15_00-11-48-removebg-preview.png" alt="Camera UI">
-                </div>
-    
-                <div style="
-                    max-width:420px;
-                ">
-                    <h3 class="feature-name" style="margin-bottom:20px;">
-                        Personalização Inteligente
-                    </h3>
-    
-                    <p class="feature-text">
-                       Após escolher a experiência personalizada, o usuário poderá selecionar quais recursos da câmera fazem mais sentido para o seu dia a dia. A interface permite destacar funções favoritas e adaptar rapidamente o aplicativo ao estilo de uso de cada pessoa, tornando a navegação mais prática, rápida e intuitiva.
-                    </p>
-                </div>
-    
-            </div>
-        </div>
-                </p>
-
-  </div>
-  <div class="features-list">
-
-    <div class="feature-item">
-      <div class="feature-number"><h1>03</h1></div>
-
-    
-        <div style="
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            gap:60px;
-            flex-wrap:wrap;
-        ">
-
-            <div class="phone-frame">
-                <img src="src/imgs/Captura_de_tela_de_2026-05-15_00-06-44-removebg-preview.png" alt="Camera UI">
-            </div>
-
-            <div style="
-                max-width:420px;
-            ">
-                <h3 class="feature-name" style="margin-bottom:20px;">
-                    Preferências Aplicadas
-                </h3>
-
-                <p class="feature-text">
-                   O usuário poderá marcar os recursos desejados para compor sua experiência personalizada. Os itens selecionados recebem um destaque em azul, indicando que foram ativados e adicionados à configuração da câmera.zada, adaptada às suas preferências, ou manter o modo padrão do sistema do celular.
-                </div>
-    
-            </div>
-          
-    
-        </div>
-    
-        <div class="feature-item">
-            <div class="feature-number"><h1>04</h1></div>
-    
-        
-            <div style="
-                display:flex;
-                justify-content:center;
-                align-items:center;
-                gap:60px;
-                flex-wrap:wrap;
-            ">
-    
-                <div class="phone-frame">
-                    <img src="src/imgs/Captura_de_tela_de_2026-05-15_00-13-33-removebg-preview.png" alt="Camera UI">
-                </div>
-    
-                <div style="
-                    max-width:420px;
-                ">
-                    <h3 class="feature-name" style="margin-bottom:20px;">
-                        Personalização Aplicada
-                    </h3>
-    
-                    <p class="feature-text">
-                        Com as preferências aplicadas, a interface da câmera é reorganizada para destacar os recursos selecionados pelo usuário. Os modos favoritos ficam mais acessíveis dentro da navegação, proporcionando uma experiência mais rápida, prática e personalizada no uso diário.
-                    </p>
-                </div>
-    
-            </div>
-        </div>
-    
-  </div>
-<div class="features-list">
-
-  <div class="feature-item" style="grid-column: span 2;">
-    <div class="feature-number"><h1>05</h1></div>
-
-    <div style="
-        display:flex;
-        justify-content:center;
-        align-items:center;
-        gap:60px;
-        flex-wrap:wrap;
-    ">
-        <div class="phone-frame">
-            <img src="src/imgs/Captura_de_tela_de_2026-05-15_00-35-50-removebg-preview.png" alt="Camera UI">
-        </div>
-        <div style="max-width:1000px;">
-            <h3 class="feature-name" style="margin-bottom:20px;">
-                Editar Personalização
-            </h3>
-
-            <p class="feature-text">
-                Caso queira alterar suas preferências futuramente, o usuário poderá acessar a opção “Mais” dentro da interface da câmera e selecionar o botão “Editar”. Assim, será possível modificar os recursos escolhidos anteriormente de forma rápida e prática.
-            </p>
-        </div>
-
-        
-
-    </div>
-
-  </div>
-
-</div>
-    
-        
-    
-  </div>
-<hr>
-</section>
-
-
-<section class="cta" id="contact">
-
-  <div class="cta-inner">
-
-    <div class="cta-left" style="
-      position:relative;
-      overflow:hidden;
-      border-right:none;
-    ">
-        <div class="hero-bg-circle"></div>
-
-      <div class="hero-grid-overlay"></div>
-
-      <div style="position:relative; z-index:2;">
-
-        <p class="section-eyebrow">Contato</p>
-
-        <h2 class="cta-title">
-          Gostou da experiência<br>
-          <em>desenvolvida?</em>
-        </h2>
-
-        <p class="cta-text" style="max-width:700px;">
-          Caso queira desenvolver um site moderno, interativo e com uma experiência premium semelhante a este projeto, entre em contato para conversarmos sobre a sua ideia.
-        </p>
-
-        <button class="btn-main"
-            onclick="window.open('https://wa.me/5511969315562?text=Olá,%20gostaria%20de%20desenvolver%20um%20site.', '_blank')">
-
-            Entrar em Contato
-        </button>
-
+      <div class="hero-actions">
+        <button class="btn-main" onclick="window.location.href='src/pages/prototipo.html'">Ver Protótipo</button>
       </div>
 
     </div>
 
-  </div>
+    <div class="hero-right">
+      <div class="hero-bg-circle"></div>
 
-</section>
+      <div class="phone-frame" onclick="window.location.href='src/pages/prototipo.html'">
+        <img src="src/imgs/Captura_de_tela_de_2026-05-15_00-13-33-removebg-preview.png" alt="Tela inicial do aplicativo Camera Jovi">
+      </div>
+    </div>
+
+  </section>
+</header>
+
 <div class="marquee-section">
-
   <div class="marquee-track">
+    <div class="marquee-item">Interface Minimalista</div>
+    <div class="marquee-item">Controles Inteligentes</div>
+    <div class="marquee-item">Animações Premium</div>
+    <div class="marquee-item">UX Otimizada</div>
+    <div class="marquee-item">Personalização Inteligente</div>
+    <div class="marquee-item">Experiência Fluida</div>
 
-    <div class="marquee-item">-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</div>
-    <div class="marquee-item">-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</div>
-
+    <div class="marquee-item">Interface Minimalista</div>
+    <div class="marquee-item">Controles Inteligentes</div>
+    <div class="marquee-item">Animações Premium</div>
+    <div class="marquee-item">UX Otimizada</div>
+    <div class="marquee-item">Personalização Inteligente</div>
+    <div class="marquee-item">Experiência Fluida</div>
   </div>
+</div>
 
+<main>
+
+  <!-- A SOLUÇÃO -->
+  <section class="features" id="solucao" aria-labelledby="solucao-titulo">
+
+    <div class="section-header">
+      <div>
+        <p class="section-eyebrow">A Solução</p>
+        <h2 class="section-title" id="solucao-titulo">
+          O problema que<br>
+          <em>resolvemos</em><br>
+          e como funciona
+        </h2>
+      </div>
+
+      <p class="section-desc">
+        A maioria dos aplicativos de câmera entrega a mesma interface padrão para todo mundo, obrigando o usuário a navegar por menus cheios de funções que ele nunca usa. O Camera Jovi resolve isso deixando cada pessoa montar a própria experiência: o app aprende quais recursos importam para o seu dia a dia e reorganiza a interface em torno deles, tornando a captura mais rápida, intuitiva e esteticamente refinada.
+      </p>
+    </div>
+
+    <div class="features-list">
+
+      <article class="feature-item">
+        <div class="feature-number"><h3>01</h3></div>
+        <div style="display:flex; justify-content:center; align-items:center; gap:60px; flex-wrap:wrap;">
+          <div class="phone-frame">
+            <img src="src/imgs/Captura_de_tela_de_2026-05-15_00-10-04-removebg-preview.png" alt="Tela de escolha de experiência personalizada">
+          </div>
+          <div style="max-width:420px;">
+            <h3 class="feature-name" style="margin-bottom:20px;">Experiência Personalizada</h3>
+            <p class="feature-text">
+              Ao abrir a câmera pela primeira vez, o usuário poderá escolher entre utilizar uma experiência personalizada, adaptada às suas preferências, ou manter o modo padrão do sistema do celular.
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <article class="feature-item">
+        <div class="feature-number"><h3>02</h3></div>
+        <div style="display:flex; justify-content:center; align-items:center; gap:60px; flex-wrap:wrap;">
+          <div class="phone-frame">
+            <img src="src/imgs/Captura_de_tela_de_2026-05-15_00-11-48-removebg-preview.png" alt="Tela de seleção de recursos favoritos">
+          </div>
+          <div style="max-width:420px;">
+            <h3 class="feature-name" style="margin-bottom:20px;">Personalização Inteligente</h3>
+            <p class="feature-text">
+              Após escolher a experiência personalizada, o usuário poderá selecionar quais recursos da câmera fazem mais sentido para o seu dia a dia. A interface permite destacar funções favoritas e adaptar rapidamente o aplicativo ao estilo de uso de cada pessoa.
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <article class="feature-item">
+        <div class="feature-number"><h3>03</h3></div>
+        <div style="display:flex; justify-content:center; align-items:center; gap:60px; flex-wrap:wrap;">
+          <div class="phone-frame">
+            <img src="src/imgs/Captura_de_tela_de_2026-05-15_00-06-44-removebg-preview.png" alt="Tela com recursos marcados em destaque azul">
+          </div>
+          <div style="max-width:420px;">
+            <h3 class="feature-name" style="margin-bottom:20px;">Preferências Aplicadas</h3>
+            <p class="feature-text">
+              O usuário poderá marcar os recursos desejados para compor sua experiência personalizada. Os itens selecionados recebem um destaque em azul, indicando que foram ativados e adicionados à configuração da câmera.
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <article class="feature-item">
+        <div class="feature-number"><h3>04</h3></div>
+        <div style="display:flex; justify-content:center; align-items:center; gap:60px; flex-wrap:wrap;">
+          <div class="phone-frame">
+            <img src="src/imgs/Captura_de_tela_de_2026-05-15_00-13-33-removebg-preview.png" alt="Interface final reorganizada com recursos favoritos">
+          </div>
+          <div style="max-width:420px;">
+            <h3 class="feature-name" style="margin-bottom:20px;">Personalização Aplicada</h3>
+            <p class="feature-text">
+              Com as preferências aplicadas, a interface da câmera é reorganizada para destacar os recursos selecionados pelo usuário, proporcionando uma experiência mais rápida, prática e personalizada no uso diário.
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <article class="feature-item" style="grid-column: span 2;">
+        <div class="feature-number"><h3>05</h3></div>
+        <div style="display:flex; justify-content:center; align-items:center; gap:60px; flex-wrap:wrap;">
+          <div class="phone-frame">
+            <img src="src/imgs/Captura_de_tela_de_2026-05-15_00-35-50-removebg-preview.png" alt="Tela de edição das preferências salvas">
+          </div>
+          <div style="max-width:1000px;">
+            <h3 class="feature-name" style="margin-bottom:20px;">Editar Personalização</h3>
+            <p class="feature-text">
+              Caso queira alterar suas preferências futuramente, o usuário poderá acessar a opção "Mais" dentro da interface da câmera e selecionar o botão "Editar", modificando os recursos escolhidos de forma rápida e prática.
+            </p>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- PÚBLICO-ALVO -->
+  <section class="audience" id="publico-alvo" aria-labelledby="publico-titulo">
+
+    <div class="section-header">
+      <div>
+        <p class="section-eyebrow">Público-Alvo</p>
+        <h2 class="section-title" id="publico-titulo">
+          Para quem é<br>
+          o <em>Camera Jovi</em>
+        </h2>
+      </div>
+
+      <p class="section-desc">
+        A solução foi pensada para pessoas que usam a câmera do celular diariamente e querem uma interface que se adapte a elas — e não o contrário.
+      </p>
+    </div>
+
+    <div class="audience-grid">
+      <article class="audience-card">
+        <h3>Criadores de Conteúdo</h3>
+        <p>Usuários que gravam vídeos e fotos com frequência para redes sociais e precisam de acesso rápido a modos e ajustes específicos, sem perder tempo navegando em menus genéricos.</p>
+      </article>
+
+      <article class="audience-card">
+        <h3>Usuários do Dia a Dia</h3>
+        <p>Pessoas que usam a câmera para registrar o cotidiano e preferem uma experiência simples, com apenas os recursos que realmente utilizam em destaque.</p>
+      </article>
+
+      <article class="audience-card">
+        <h3>Entusiastas de Fotografia Mobile</h3>
+        <p>Usuários mais avançados que querem controle fino sobre a câmera e valorizam uma interface que possa ser configurada de acordo com seu fluxo de trabalho.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- GALERIA -->
+  <section class="gallery" id="galeria" aria-labelledby="galeria-titulo">
+
+    <div class="section-header">
+      <div>
+        <p class="section-eyebrow">Galeria</p>
+        <h2 class="section-title" id="galeria-titulo">
+          Veja a<br>
+          <em>solução</em><br>
+          em ação
+        </h2>
+      </div>
+
+      <p class="section-desc">
+        Capturas de tela do protótipo mostrando o passo a passo da experiência personalizada, do primeiro acesso à interface final adaptada ao usuário.
+      </p>
+    </div>
+
+    <div class="gallery-grid">
+      <figure class="gallery-item">
+        <img src="src/imgs/Captura_de_tela_de_2026-05-15_00-10-04-removebg-preview.png" alt="Tela de escolha de experiência personalizada">
+        <figcaption>Escolha da experiência</figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <img src="src/imgs/Captura_de_tela_de_2026-05-15_00-11-48-removebg-preview.png" alt="Tela de seleção de recursos favoritos">
+        <figcaption>Seleção de recursos</figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <img src="src/imgs/Captura_de_tela_de_2026-05-15_00-06-44-removebg-preview.png" alt="Tela com recursos marcados em destaque azul">
+        <figcaption>Preferências aplicadas</figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <img src="src/imgs/Captura_de_tela_de_2026-05-15_00-35-50-removebg-preview.png" alt="Tela de edição das preferências salvas">
+        <figcaption>Edição de preferências</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- NOSSA EQUIPE -->
+  <section class="team" id="equipe" aria-labelledby="equipe-titulo">
+
+    <div class="section-header">
+      <div>
+        <p class="section-eyebrow">Nossa Equipe</p>
+        <h2 class="section-title" id="equipe-titulo">
+          Quem fez o<br>
+          <em>Camera Jovi</em>
+        </h2>
+      </div>
+
+      <p class="section-desc">
+        Grupo "Da Facul" — quatro integrantes responsáveis pelo desenvolvimento completo da solução, da concepção da ideia ao protótipo final.
+      </p>
+    </div>
+
+    <div class="team-grid">
+      <article class="team-card">
+        <div class="team-avatar">L</div>
+        <h3>Leonardo Gonçalves Cardoso da Fonseca</h3>
+        <p class="team-role">RA 569475</p>
+        <p>Integrante do grupo, atuando no desenvolvimento da solução Camera Jovi.</p>
+      </article>
+
+      <article class="team-card">
+        <div class="team-avatar">K</div>
+        <h3>Kaue Fernando Jaques Lopes</h3>
+        <p class="team-role">RA 571353</p>
+        <p>Integrante do grupo, atuando no desenvolvimento da solução Camera Jovi.</p>
+      </article>
+
+      <article class="team-card">
+        <div class="team-avatar">M</div>
+        <h3>Matheus Martins Santos</h3>
+        <p class="team-role">RA 570884</p>
+        <p>Integrante do grupo, atuando no desenvolvimento da solução Camera Jovi.</p>
+      </article>
+
+      <article class="team-card">
+        <div class="team-avatar">K</div>
+        <h3>Kaio Nincao Maia Dias</h3>
+        <p class="team-role">RA 568834</p>
+        <p>Integrante do grupo, atuando no desenvolvimento da solução Camera Jovi.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="cta" id="contato" aria-labelledby="contato-titulo">
+    <div class="cta-inner">
+      <div class="cta-left" style="position:relative; overflow:hidden; border-right:none;">
+        <div class="hero-bg-circle"></div>
+        <div class="hero-grid-overlay"></div>
+
+        <div style="position:relative; z-index:2;">
+          <p class="section-eyebrow">Contato</p>
+
+          <h2 class="cta-title" id="contato-titulo">
+            Contato
+          </h2>
+
+          <form class="contact-form" onsubmit="return enviarContato(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contato-nome">Nome</label>
+                <input type="text" id="contato-nome" name="nome" placeholder="Seu nome" required>
+              </div>
+
+              <button type="submit" class="btn-main form-submit">Enviar</button>
+            </div>
+
+            <div class="form-group">
+              <label for="contato-duvida">Dúvida</label>
+              <textarea id="contato-duvida" name="duvida" placeholder="Escreva sua dúvida aqui" required></textarea>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div class="marquee-section">
+  <div class="marquee-track">
+    <div class="marquee-item">Camera Jovi — Grupo Da Facul — Challenge — Landing Page</div>
+    <div class="marquee-item">Camera Jovi — Grupo Da Facul — Challenge — Landing Page</div>
+  </div>
 </div>
 
 <!-- FOOTER -->
 <footer>
-
   <span class="footer-logo">
     Grupo: Da Facul<span>.</span>
   </span>
@@ -349,8 +370,40 @@
   <span class="footer-copy">
     © 2026 — Camera Jovi
   </span>
-
 </footer>
+
+<script>
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+
+  navToggle.addEventListener('click', () => {
+    const isOpen = navLinks.classList.toggle('is-open');
+    navToggle.classList.toggle('is-active', isOpen);
+    navToggle.setAttribute('aria-expanded', isOpen);
+  });
+
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('is-open');
+      navToggle.classList.remove('is-active');
+      navToggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  function enviarContato(event){
+    event.preventDefault();
+
+    const nome = document.getElementById('contato-nome').value.trim();
+    const duvida = document.getElementById('contato-duvida').value.trim();
+
+    const mensagem = `Olá, meu nome é ${nome}. Minha dúvida é: ${duvida}`;
+    const url = `https://wa.me/5511969315562?text=${encodeURIComponent(mensagem)}`;
+
+    window.open(url, '_blank');
+
+    return false;
+  }
+</script>
 
 </body>
 </html>
